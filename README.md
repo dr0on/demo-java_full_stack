@@ -7,7 +7,7 @@ Programmatic Spring Configuration (No XML)
 ```
 Very simple example showing a Bootstrap frontend.  
 Submitting Login form makes an AJAX post to Spring Controller.  
-It will then display the returned JSON.
+It will then display the returned JSON (boolean verifying whether user exists in table.
 Nothing Fancy.
 ```
 

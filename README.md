@@ -13,7 +13,9 @@ Nothing Fancy.
 ID, Email, Name, Password:
 
 (0,'marsha@hotmail.com','marsha','password')
+
 (1,'adam.gerard@gmail.com','adam','password')
+
 (2,'bob.joe@gmail.com','jim','password')
 
 

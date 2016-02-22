@@ -1,8 +1,5 @@
 package com.thoughtscript.javafullstack.configuration;
 
-import javax.sql.DataSource;
-
-import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,13 +7,15 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.resource.PathResourceResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.thoughtscript.javabackend")
-public class Config {
+@ComponentScan(basePackages = "com.thoughtscript.javafullstack")
+public class Config extends WebMvcConfigurerAdapter{
 
 	@Bean
 	public UrlBasedViewResolver setupViewResolver() {
@@ -40,17 +39,9 @@ public class Config {
 		return lemfb;
 	}
 
-	@Bean
-	public DataSource getDataSource() {
-		BasicDataSource dataSource = new BasicDataSource();
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/concretepage");
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
-		return dataSource;
-	}
-
+	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/*");
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/").setCachePeriod(3600)
+				.resourceChain(true).addResolver(new PathResourceResolver());
 	}
 }

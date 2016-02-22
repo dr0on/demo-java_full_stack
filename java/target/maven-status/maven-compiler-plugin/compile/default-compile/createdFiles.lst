@@ -1,0 +1,6 @@
+com\thoughtscript\javafullstack\configuration\Config.class
+com\thoughtscript\javafullstack\configuration\WebAppInitializer.class
+com\thoughtscript\javafullstack\domain\User.class
+com\thoughtscript\javafullstack\controller\UserController.class
+com\thoughtscript\javafullstack\dao\UserDao.class
+com\thoughtscript\javafullstack\services\UserService.class

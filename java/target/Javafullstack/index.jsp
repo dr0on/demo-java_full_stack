@@ -296,9 +296,9 @@
                         <div class="loginmodal-container">
                             <h1>Login to Your Account</h1>
                             <br>
-                            <form id="loginForm">
-                                <input type="text" id="email" name="email" placeholder="Email">
-                                <input type="password" id="password" name="pass" placeholder="Password">
+                            <form id="loginForm" action='#'>
+                                <input type="text" id="emailform" name="email" placeholder="Email">
+                                <input type="password" id="password" name="password" placeholder="Password">
                                 <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                             </form>
 

@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-	$('.loginmodal-submit').click(function() {
-
+	$('.loginmodal-submit').click(function(event) {
+		event.preventDefault();
+		
 		var data = {},
-			email = $('#email').val(),
+			email = $('#emailform').val(),
 		    password = $('#password').val();
 
 		if (Validate(email) && Validate(password)) {
@@ -13,12 +14,15 @@ $(document).ready(function() {
 
               jQuery.ajax({
                     type: "GET",
-                    url: "../users",
+                    url: "user/authenticate",
                     data: data,
-                    success: function(data) {     
+                    success: function(data) {   
                     	alert(data);
                         document.getElementById("loginForm").reset();
                     },
+                    error : function(e) {
+                    	display(e);
+                    }
                 });       
 		}});
 

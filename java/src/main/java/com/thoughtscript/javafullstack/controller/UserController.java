@@ -17,14 +17,14 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/authenticate", method = RequestMethod.GET)
 	@ResponseBody
-	public boolean authenticateUser(@RequestParam(value = "email") String email,
+	public String authenticateUser(@RequestParam(value = "email") String email,
 			@RequestParam(value = "password") String password) {
 		if (StringUtils.isNotEmpty(email) && StringUtils.isNotEmpty(password)) {
-			return userService.authenticate(email, password);
+			return email + " authenticated:" + String.valueOf(userService.authenticate(email, password));
 		} else {
-			return false;
+			return email + " authenticated:" + String.valueOf(false);
 		}
 	}
 }

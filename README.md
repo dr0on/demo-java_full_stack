@@ -10,4 +10,10 @@ Submitting Login form makes an AJAX post to Spring Controller.
 It will then display the returned JSON (boolean verifying whether user exists in table.
 Nothing Fancy.
 ```
+ID, Email, Name, Password:
+
+(0,'marsha@hotmail.com','marsha','password')
+(1,'adam.gerard@gmail.com','adam','password')
+(2,'bob.joe@gmail.com','jim','password')
+
 

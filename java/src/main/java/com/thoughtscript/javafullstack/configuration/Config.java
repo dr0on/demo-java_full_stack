@@ -51,6 +51,6 @@ public class Config {
 	}
 
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resources/**").addResourceLocations("/webapp/resources/*");
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/*");
 	}
 }

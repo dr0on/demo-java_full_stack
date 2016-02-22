@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.thoughtscript.javafullstack.services.UserService;
 
@@ -17,6 +18,7 @@ public class UserController {
 	private UserService userService;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@ResponseBody
 	public boolean authenticateUser(@RequestParam(value = "email") String email,
 			@RequestParam(value = "password") String password) {
 		if (StringUtils.isNotEmpty(email) && StringUtils.isNotEmpty(password)) {

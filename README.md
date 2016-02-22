@@ -18,4 +18,9 @@ ID, Email, Name, Password:
 
 (2,'bob.joe@gmail.com','jim','password')
 
+```
+Deploy to Tomcat
+
+hit localhost:8080/javafullstack
+```
 

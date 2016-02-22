@@ -1,7 +1,6 @@
 # demo-java_full_stack
 
-Restful Backend
-Java 8 + Programmatic XML-less Spring + Hibernate + SQL DB
+Bootstrap + Java 8 + Spring 4.2.4 + Hibernate Entity Manager 5.1.0 + MySQL
 
-Bootstrap Frontend with a TBD Framework
+Programmatic Spring Configuration (No XML)
 

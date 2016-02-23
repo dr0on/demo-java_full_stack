@@ -24,3 +24,8 @@ Deploy to Tomcat
 hit localhost:8080/javafullstack
 ```
 
+```
+To run set up MySQL and import the .sql script.
+Change settings in persistence.xml
+```
+

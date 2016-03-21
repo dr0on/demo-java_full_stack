@@ -13,6 +13,7 @@ Submitting Login form makes an AJAX get to Spring Controller.
 It will then display the returned and alert specifying whether user authenticates.
 Nothing Fancy.
 ```
+```
 SQL Table Structure:
 
 ID, Email, Name, Password:
@@ -22,6 +23,7 @@ ID, Email, Name, Password:
 (1,'adam.gerard@gmail.com','adam','password')
 
 (2,'bob.joe@gmail.com','jim','password')
+```
 
 ```
 How do I get it setup?

@@ -2,14 +2,19 @@
 
 Bootstrap + Java 8 + Spring 4.2.4 + Hibernate Entity Manager 5.1.0 + MySQL
 
-Programmatic Spring Configuration (No XML)
+Programmatic Spring Configuration (No XML) using latest libraries. 
+Now you don't have to configure 50 million xml files!
 
 ```
+What does it do?
+
 Very simple example showing a Bootstrap frontend.  
 Submitting Login form makes an AJAX get to Spring Controller.  
 It will then display the returned and alert specifying whether user authenticates.
 Nothing Fancy.
 ```
+SQL Table Structure:
+
 ID, Email, Name, Password:
 
 (0,'marsha@hotmail.com','marsha','password')
@@ -19,8 +24,10 @@ ID, Email, Name, Password:
 (2,'bob.joe@gmail.com','jim','password')
 
 ```
-Deploy to Tomcat
+How do I get it setup?
 
+Install Apache Tomcat.
+Deploy to Tomcat
 hit localhost:8080/javafullstack
 ```
 

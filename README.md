@@ -37,7 +37,7 @@ Key stuff for Spring and Hibernate!!!
 Spring/Hibernate
 
 Domain
-@Entity - species domain entity
+@Entity - specifies domain entity
 @Table - table matched with
 @Id - specifies primary key
 @Column - matches field with table column

@@ -29,3 +29,37 @@ To run set up MySQL and import the .sql script.
 Change settings in persistence.xml
 ```
 
+-----------------------------------------------------------------------
+
+Key stuff for Spring:
+
+Spring/Hibernate
+
+Domain
+@Entity - species domain entity
+@Table - table matched with
+@Id - specifies primary key
+@Column - matches field with table column
+@Join - joins in domain automatically
+
+DAO
+@Repository
+@Autowired persistence context
+
+Controller
+@Controller
+@RequestMapping - what url
+@ReponseBody
+@Autowired Service
+
+Service
+@Service
+@Autowired Dao
+
+Config
+@EnableWrbMVC
+@Configuration
+@ComponentScan - where to look
+@Bean
+
+

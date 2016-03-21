@@ -31,8 +31,9 @@ Change settings in persistence.xml
 
 -----------------------------------------------------------------------
 
-Key stuff for Spring:
+Key stuff for Spring and Hibernate!!!
 
+```
 Spring/Hibernate
 
 Domain
@@ -61,5 +62,5 @@ Config
 @Configuration
 @ComponentScan - where to look
 @Bean
-
+```
 
